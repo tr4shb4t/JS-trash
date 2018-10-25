@@ -95,9 +95,9 @@ function initializeGame() {
 
 function make2DArray(size) {
   let result = []
-  for (let i = 0; i < gridSize; i++) {
+  for (let i = 0; i < size; i++) {
     let tempRow = [];
-    for (let j = 0; j < gridSize; j++) {
+    for (let j = 0; j < size; j++) {
       tempRow.push(new Cell(i, j, cellSize, risk));
     }
     result.push(tempRow);
