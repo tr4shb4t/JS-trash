@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
+    <style> body {padding: 0; margin: 0;} </style>
+    <script src="../../p5/p5.min.js"></script>
+    <script src="../../p5/addons/p5.dom.min.js"></script>
+    <!-- <script src="../../p5/addons/p5.sound.min.js"></script> -->
+    <script src="sketch.js"></script>
+    <script src="cell.js"></script>
+    <!-- disable context menu -->
+    <script>
+      // Use document as opposed to window for IE8 compatibility
+      document.oncontextmenu = () => { return false; };
+      // Not compatible with IE < 9
+      window.addEventListener('contextmenu', (e) => { e.preventDefault(); }, false);
+    </script>
+  </head>
+  <body>
+    <h1>Mine clearance simulator</h1>
+  </body>
+</html>
